@@ -1,15 +1,7 @@
 package com.wipro.creditcard;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
-
-
-@Entity
-@Table(name = "CreditScore")
 public class CreditScore {
 
-	@Id
 	String pan_number;
 	double credit_score;
 	
