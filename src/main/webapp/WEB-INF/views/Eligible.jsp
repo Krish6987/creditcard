@@ -5,7 +5,7 @@
 </head>
 <body>
 <div style="height:25%; background-color:#FFA07A">
-<h1 style="padding-top: 20px; padding-left: 40px" id="msg">${msg}</h1>
+<h1 style="padding-top: 20px; padding-left: 40px" id="msg">Congratulations!!! You are eligible for a credit card</h1>
 <div>
 </body>
 </html>

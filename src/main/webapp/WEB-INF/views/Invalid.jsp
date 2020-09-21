@@ -5,7 +5,7 @@
 </head>
 <body>
 <div style="height:20%; background-color:#FFA07A; padding-left: 40px">
-<h1 style="padding-top: 20px" id="msg">${msg}</h1>
+<h1 style="padding-top: 20px" id="msg">Invalid Pan Entry !!!</h1>
 <br><br>
 <a href="/" id="index">Enter Again</a>
 <div>
