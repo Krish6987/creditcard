@@ -22,7 +22,7 @@
 	</bean>
 
 	<bean id="mysessionFactory"
-		class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
+		class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
 		<property name="dataSource" ref="dataSource"></property>
 		<property name="mappingLocations">
 			<list>
@@ -38,12 +38,12 @@
 		</property>
 	</bean>
 
-	<bean id="template" class="org.springframework.orm.hibernate4.HibernateTemplate">
+	<bean id="template" class="org.springframework.orm.hibernate3.HibernateTemplate">
 		<property name="sessionFactory" ref="mysessionFactory"></property>
 		<property name="checkWriteOperations" value="false"></property>
 	</bean>
 
-	<bean id="creditcardDAO" class="com.wipro.creditcard.CreditScoreDAO">
+	<bean id="creditScoreDAO" class="com.wipro.creditcard.CreditScoreDAO">
 		<property name="template" ref="template"></property>
 	</bean>
 

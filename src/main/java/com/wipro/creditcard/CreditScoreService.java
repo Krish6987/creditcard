@@ -9,7 +9,7 @@ public class CreditScoreService {
 	public String checkElgible(String panNO) {
 		
         ApplicationContext context = new ClassPathXmlApplicationContext("application-context.xml");
-        CreditScoreDAO dao = context.getBean("creditcardDAO", CreditScoreDAO.class);
+        CreditScoreDAO dao = context.getBean("creditScoreDAO", CreditScoreDAO.class);
         
         CreditScore dbData = dao.getDBData(panNO.toUpperCase());
         
