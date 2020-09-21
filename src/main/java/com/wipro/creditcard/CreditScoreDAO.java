@@ -1,6 +1,6 @@
 package com.wipro.creditcard;
 
-import org.springframework.orm.hibernate3.HibernateTemplate;
+import org.springframework.orm.hibernate4.HibernateTemplate;
 
 
 public class CreditScoreDAO {

@@ -22,7 +22,7 @@
 	</bean>
 
 	<bean id="mysessionFactory"
-		class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
+		class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
 		<property name="dataSource" ref="dataSource"></property>
 		<property name="mappingLocations">
 			<list>
@@ -38,7 +38,7 @@
 		</property>
 	</bean>
 
-	<bean id="template" class="org.springframework.orm.hibernate3.HibernateTemplate">
+	<bean id="template" class="org.springframework.orm.hibernate4.HibernateTemplate">
 		<property name="sessionFactory" ref="mysessionFactory"></property>
 		<property name="checkWriteOperations" value="false"></property>
 	</bean>
